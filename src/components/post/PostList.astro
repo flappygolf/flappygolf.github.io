@@ -1,4 +1,4 @@
----
+﻿---
 import type { CollectionEntry } from 'astro:content'
 import PostCard from './PostCard.astro'
 
@@ -10,13 +10,17 @@ const { posts } = Astro.props
 ---
 
 <div>
-  <ul class="-my-4">
-    {
-      posts.map((post) => (
-        <li>
-          <PostCard entry={post} />
-        </li>
-      ))
-    }
-  </ul>
+  {
+    posts.length === 0 ? (
+      <p class="text-secondary">No posts yet. Add your first publication or research note.</p>
+    ) : (
+      <ul class="-my-4">
+        {posts.map((post) => (
+          <li>
+            <PostCard entry={post} />
+          </li>
+        ))}
+      </ul>
+    )
+  }
 </div>

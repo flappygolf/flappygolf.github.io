@@ -1,25 +1,25 @@
-{
+﻿{
   "site": {
-    "url": "https://drowsyindra.github.io",
-    "title": "博客",
-    "description": "这是一个有理想的人走过的漫长道路",
-    "keywords": "Kunyi,blog,dream,indra,博客,逐梦",
-    "lang": "zh-CN",
+    "url": "https://flappygolf.github.io",
+    "title": "Academic Homepage",
+    "description": "Personal academic website for publications, projects, and research updates.",
+    "keywords": "academic,research,papers,projects,scholar",
+    "lang": "en-US",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
-    "name": "Kunyi",
-    "twitterId": "@lxchapu",
+    "name": "Zhenhao Ni",
+    "twitterId": "",
     "avatar": "/img/avatar.jpg"
   },
   "hero": {
     "name": "Zhenhao Ni",
-    "bio": "Stay Humble",
-    "description": "unknown",
+    "bio": "Researcher",
+    "description": "Focused on Embodied Intelligence, Autonomous Driving, and Robotics.",
     "socials": [
       {
-        "name": "Github",
+        "name": "GitHub",
         "icon": "icon-github",
         "url": "https://github.com/flappygolf",
         "color": "rgb(239, 70, 107)"
@@ -27,11 +27,11 @@
       {
         "name": "Email",
         "icon": "icon-mail",
-        "url": "haoni9276@gmail.com",
+        "url": "mailto:haoni9276@gmail.com",
         "color": "rgb(150, 215, 201)"
       }
     ],
-    "yiyan": "unknown"
+    "yiyan": "Keep exploring. Keep building."
   },
   "color": {
     "accent": [
@@ -60,36 +60,31 @@
   },
   "menus": [
     {
-      "name": "首页",
+      "name": "Home",
       "link": "/",
       "icon": "icon-pantone"
     },
     {
-      "name": "论文paper",
+      "name": "Publications",
       "link": "/archives",
       "icon": "icon-archive"
     },
     {
-      "name": "项目project",
+      "name": "Projects",
       "link": "/projects",
       "icon": "icon-flask"
     },
     {
-      "name": "关于",
+      "name": "About",
       "link": "/about",
       "icon": "icon-ghost"
-    },
-    {
-      "name": "友链",
-      "link": "/friends",
-      "icon": "icon-hearts"
     }
   ],
   "posts": {
     "perPage": 10
   },
   "footer": {
-    "startTime": "2024-07-29T00:00:00Z"
+    "startTime": "2026-03-10T00:00:00Z"
   },
   "docSearch": {
     "appId": "",
@@ -97,10 +92,10 @@
     "indexName": ""
   },
   "waline": {
-    "serverURL": "https://waline-1-t8619760.deta.app/"
+    "serverURL": ""
   },
   "sponsor": {
-    "wechat": "https://s2.loli.net/2024/08/03/6lXu4rHghkCmofV.jpg"
+    "wechat": ""
   },
   "analytics": {
     "enable": false,
@@ -108,8 +103,8 @@
       "measurementId": ""
     },
     "umami": {
-      "serverUrl": "https://cloud.umami.is/script.js",
-      "websiteId": "29fd67cb-7e28-4465-8291-96a6906c4d58"
+      "serverUrl": "",
+      "websiteId": ""
     },
     "microsoftClarity": {
       "projectId": ""

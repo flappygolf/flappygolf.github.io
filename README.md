@@ -1,72 +1,27 @@
-# Gyoza
+﻿# 学术网站模板（已清理）
 
-Gyoza is a static blog template built with Astro and React.
+这是一个基于 Astro + React 的个人学术网站。
 
-![astro version](https://img.shields.io/badge/astro-4.6-red)
-![node version](https://img.shields.io/badge/node-18.18-green)
+## 当前状态
 
-Demo Site:
+- 已删除模板自带示例文章、项目和友链。
+- 已将主要可视化文案统一为中文。
+- 首页、归档、标签、分类、404 等页面均可在空数据下正常显示。
 
-- [gyoza.lxchapu.com](https://gyoza.lxchapu.com)
-- [www.lxchapu.com](https://www.lxchapu.com)
+## 常用命令
 
-Enjoy it!
+| Command        | Action                       |
+| :------------- | :--------------------------- |
+| `pnpm i`       | 安装依赖                     |
+| `pnpm dev`     | 本地开发（`localhost:4321`） |
+| `pnpm build`   | 构建生产版本到 `./dist/`     |
+| `pnpm preview` | 本地预览构建结果             |
+| `pnpm lint`    | 使用 Prettier 格式化代码     |
 
-## 📷 Screenshots
+## 内容维护
 
-![Preview](https://s2.loli.net/2024/05/06/A9rzC3Uym7RwdQc.webp)
-
-## 🎉 Features
-
-- ✅ 有着规范的 URL 和 OpenGraph 信息，对 SEO 友好
-- ✅ 支持站点地图
-- ✅ 支持 RSS 订阅
-- ✅ 支持夜间模式
-- ✅ 特殊日期变灰
-- ✅ 简单干净的配色和主题
-- ✅ 支持评论系统
-- ✅ 支持代码高亮
-
-## 🔧 Tech Stack
-
-- [Astro](https://astro.build/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Jotai](https://jotai.org/)
-
-## 📖 Documentation
-
-前往：[Documentation](https://gyoza.lxchapu.com/posts/guide)
-
-## 🚀 Project Structure
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   ├── pages/
-│   ├── plugins/
-│   ├── store/
-│   ├── styles/
-│   ├── utils/
-│   └── config.json
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
-网站配置保存在 `config.json` 文件。
-
-## 🧞 Commands
-
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm i`       | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
-| `pnpm format`  | Format code using Prettier                   |
+- 文章目录：`src/content/posts/`
+- 项目目录：`src/content/projects/`
+- 友链目录：`src/content/friends/`
+- 关于页：`src/content/spec/about.md`
+- 站点配置：`src/config.json`

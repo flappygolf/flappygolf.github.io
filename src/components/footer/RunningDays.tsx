@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react'
+﻿import { useLayoutEffect, useState } from 'react'
 import { footer } from '@/config.json'
 import { getDiffInDays } from '@/utils/date'
 
@@ -11,8 +11,8 @@ export function RunningDays() {
   }, [])
 
   if (days < 0) {
-    return <span>Ops! 网站还没有发布</span>
+    return <span>Site not published yet</span>
   }
 
-  return <span>已经运行了 {days} 天</span>
+  return <span>Running for {days} days</span>
 }

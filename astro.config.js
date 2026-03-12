@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+﻿import { defineConfig } from 'astro/config'
 import { remarkReadingTime } from './src/plugins/remarkReadingTime'
 import { rehypeCodeBlock } from './src/plugins/rehypeCodeBlock'
 import { rehypeTableBlock } from './src/plugins/rehypeTableBlock'
@@ -17,9 +17,8 @@ import { site } from './src/config.json'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://drowsyindra.github.io',
+  site: site.url,
   integrations: [tailwind(), react(), sitemap()],
   markdown: {
     syntaxHighlight: false,

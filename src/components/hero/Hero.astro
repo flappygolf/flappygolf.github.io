@@ -1,4 +1,4 @@
----
+﻿---
 import { hero, author } from '@/config.json'
 import { SocialList } from './SocialList'
 import Highlight from '@/components/Highlight.astro'
@@ -10,28 +10,27 @@ import Highlight from '@/components/Highlight.astro'
   >
     <div class="mt-[120px] lg:mt-0 max-w-[590px]">
       <h1 class="text-3xl text-center lg:text-left text-balance">
-        Hi there, I'm <Highlight class="font-bold">{hero.name}</Highlight>🥰<br />一个<Highlight class="font-bold">为理想痴狂实干</Highlight>的疯子
+        Hi, I'm <Highlight class="font-bold">{hero.name}</Highlight><br />
+        Welcome to my <Highlight class="font-bold">academic homepage</Highlight>
       </h1>
-      <h2 class="text-1.5xl text-center lg:text-left text-balance">
-        <br /><b>Executing the work🚧[ . . . . . . . . . . ] 0% </b>
-      </h2>
-      <div class="text-sm text-secondary mt-3 text-center lg:text-left">
-        🔴 硬件基础（电路设计、微机原理……）<br />🔴 计算机技术（组成、网络、系统……）<br />🔴 软件工程（前端、后端）<br />🔴 人工智能（深度学习……）
+      <h2 class="text-xl mt-4 text-center lg:text-left text-balance">{hero.description}</h2>
+      <p class="text-sm mt-2 text-center lg:text-left text-secondary">Affiliation: Zhejiang University</p>
+      <div class="text-sm text-secondary mt-6 text-center lg:text-left">
+        Research areas: Embodied Intelligence, Autonomous Driving, and Robotics.<br />
+        This website documents publications, projects, and ongoing milestones.
       </div>
-      <SocialList className="mt-[60px]" client:load />
+      <SocialList className="mt-[40px]" client:load />
     </div>
     <div class="mt-20 lg:mt-0">
       <div
         class="size-[200px] lg:size-[300px] rounded-full overflow-hidden border border-primary bg-zinc-100 dark:bg-zinc-800"
       >
-        <img class="size-full" src={author.avatar} alt="Site owner avatar" loading="lazy" />
+        <img class="size-full" src={author.avatar} alt="Site avatar" loading="lazy" />
       </div>
     </div>
 
     <div class="mt-10 lg:mt-0 lg:absolute inset-x-0 bottom-0 flex flex-col items-center">
-      <p class="text-xxs text-center text-balance text-secondary">
-        {hero.yiyan}
-      </p>
+      <p class="text-xxs text-center text-balance text-secondary">{hero.yiyan}</p>
       <div class="mt-7 text-xl animate-bounce">
         <i class="iconfont icon-down"></i>
       </div>
